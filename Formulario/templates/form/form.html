@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>
+        Practica django
+    </title>
+
+</head>
+<form method="POST" action="" id = "loginForm">
+       {% csrf_token %}
+    <input type="text" name="text" id= "text" value= '{% if submitbutton == "Submit" %} {{ firstname }} {% endif %}' maxlength="100"/>
+    <input type="Submit" name="Submit" id = "Submit" value="Submit" />
+
+
+    {% if submitbutton == "Submit"  %}
+
+    <h1 id = 4 name="resultado2"> {{ type }}</h1>
+
+{% endif %}
+
+
+</form>
+</html>
