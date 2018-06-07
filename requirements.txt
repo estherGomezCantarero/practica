@@ -1,0 +1,8 @@
+nose
+coverage
+mock
+django
+selenium
+aloe
+requests
+lxml
