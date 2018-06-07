@@ -7,10 +7,6 @@ class Data(models.Model):
     fecha = models.DateTimeField(default = date.today)
 
 
-    def masUsadas(self, fecha):
-        tresmayores = Data.objects.filter(fecha=fecha).order_by('cantidad').reverse()[:3]
-        return tresmayores
-
     def masUsadas(self):
         tresmayores = Data.objects.order_by('fecha').order_by('cantidad').reverse()[:3]
         return tresmayores
