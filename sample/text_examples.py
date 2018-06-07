@@ -51,9 +51,11 @@ if __name__ == '__main__':
     text = "This is an example text. Let us use two sentences, so that it is more logical."
 
     tes = "hola.. ?hola¿ hola adios  hora hola ? ¡adios"
+    p="wwwalter"
     l = TextExamples.quitarSigno(tes)
     k = TextExamples.contar(l)
-    print(TextExamples.contar(l))
+    print(TextExamples.contar(p))
+    print(TextExamples.quitarSigno(p))
     print(k[0][0])
     #l2= TextExamples.quitarSigno(my_text)
     #print(TextExamples.contar(l2))
